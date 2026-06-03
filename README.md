@@ -1,77 +1,64 @@
-SMART TRAFFIC LIGHT SIMULATION SYSTEM
+# Smart Traffic Light Simulation System
 
-INTRODUCTION
+## Project Overview
 
-The Smart Traffic Light Simulation System is a traffic management simulation developed using VB.NET Windows Forms Application. The project demonstrates how traffic lights operate in multiple intersections through timer-based control and event-driven programming. The system was designed to simulate vehicle traffic management and pedestrian crossing operations in a simple graphical user interface.
+The Smart Traffic Light Simulation System is a traffic management simulation developed using VB.NET Windows Forms Application. The purpose of this project is to demonstrate how traffic lights and pedestrian crossing systems can be managed through timer-based automation and event-driven programming.
 
-OBJECTIVES
+The system simulates four connected traffic intersections, identified as Intersection A, Intersection B, Intersection C, and Intersection D. Each intersection contains vehicle traffic lights represented by Red, Yellow, and Green indicators. The traffic lights operate automatically according to a programmed sequence that controls the flow of traffic in different directions.
 
-The main objective of this project is to create a traffic light simulation system that demonstrates traffic light synchronization and pedestrian crossing management using VB.NET.
+The project was designed to provide a simple representation of how real-world traffic management systems work. Through the use of timers, the traffic lights automatically change phases after a specific amount of time. This allows the simulation to continuously manage traffic flow without requiring manual control.
 
-SYSTEM DESCRIPTION
+## System Functionality
 
-The system consists of four traffic intersections identified as Intersection A, Intersection B, Intersection C, and Intersection D. Each intersection contains traffic lights represented by red, yellow, and green indicators. The traffic lights automatically change according to a programmed sequence controlled by a timer.
+The simulation contains four intersections arranged in a grid layout. Each intersection includes multiple traffic light indicators that represent the traffic signals used by vehicles. The traffic lights change according to synchronized traffic phases to prevent conflicting traffic movements and ensure an organized flow of vehicles.
 
-The system also includes pedestrian crossing controls. Each intersection has a pedestrian button that allows users to request a crossing signal. When activated, the pedestrian light changes state to allow pedestrians to cross safely.
+The system operates through a countdown timer that determines when a traffic light phase should change. As the countdown reaches zero, the system automatically switches to the next phase. This process continues repeatedly throughout the simulation.
 
-FEATURES OF THE SYSTEM
+In addition to vehicle traffic management, the system also includes pedestrian crossing functionality. Each intersection has a dedicated pedestrian request button. When a pedestrian button is pressed, the system registers the request and activates the pedestrian crossing signal for a limited period of time. This allows pedestrians to cross safely before the signal returns to its normal state.
 
-1. Four Traffic Intersections
+The simulation also provides Start, Stop, and Reset controls. These controls allow users to start the simulation, pause its operation, or reset the system back to its initial condition.
 
-   * Intersection A
-   * Intersection B
-   * Intersection C
-   * Intersection D
+## Key Features
 
-2. Vehicle Traffic Lights
+* Four traffic intersections (A, B, C, and D)
+* Sixteen vehicle traffic lights
+* Automatic traffic light phase switching
+* Traffic light synchronization
+* Pedestrian crossing system
+* Pedestrian request buttons
+* Countdown timer display
+* Current phase monitoring
+* Start, Stop, and Reset controls
+* Graphical User Interface (GUI)
+* Event-driven programming implementation
 
-   * Red Light
-   * Yellow Light
-   * Green Light
-   * Automatic light switching
+## Programming Concepts Used
 
-3. Traffic Light Synchronization
+This project demonstrates several important programming concepts:
 
-   * Coordinated traffic flow between intersections
-   * Phase-based traffic control
+### Event-Driven Programming
 
-4. Pedestrian Crossing System
+The system uses event-driven programming to respond to user actions and system events. Button click events are used for pedestrian requests and system controls, while timer events are used to update the traffic light states automatically.
 
-   * Pedestrian request buttons
-   * Pedestrian signal lights
-   * Automatic pedestrian crossing timer
+### Timer-Based Control
 
-5. Countdown Display
+A timer component is used to manage the traffic light sequence. The timer continuously updates the countdown and determines when traffic lights should change from one phase to another.
 
-   * Displays the remaining time before the next traffic light phase
+### Graphical User Interface (GUI)
 
-6. System Controls
+The project uses Windows Forms controls such as Panels, Buttons, Labels, and Timers to create an interactive graphical interface that visually represents traffic lights and pedestrian signals.
 
-   * Start Button
-   * Stop Button
-   * Reset Button
+## Controls Used
 
-7. Current Phase Display
+The following controls were used during development:
 
-   * Shows the active traffic light phase in the system
+* Panels for traffic light indicators and pedestrian lights
+* Buttons for pedestrian requests and system controls
+* Labels for displaying countdown values and phase information
+* Timer for automatic traffic light operation
 
-METHODOLOGY
+## Project Purpose
 
-The project was developed using Visual Studio and VB.NET Windows Forms Application. The graphical user interface was created using Windows Forms controls.
+The primary purpose of this project is to demonstrate how traffic management can be simulated through software. It provides an example of how timers, graphical user interfaces, and event-driven programming can work together to create an interactive traffic control system.
 
-The following controls were used:
-
-• Panels – used as traffic light indicators and pedestrian lights.
-• Buttons – used for pedestrian requests and system controls.
-• Labels – used for countdown and phase information.
-• Timer – used to control automatic traffic light operation.
-
-The system follows an event-driven programming approach. Traffic light changes are controlled through Timer Tick events, while pedestrian requests and system controls are handled through Button Click events.
-
-RESULTS
-
-The Smart Traffic Light Simulation System successfully simulates the operation of traffic lights across four intersections. The traffic lights automatically change according to programmed phases, while pedestrian requests are processed through dedicated pedestrian buttons. The system demonstrates timer-based control, traffic light synchronization, and event-driven programming within a graphical user interface.
-
-CONCLUSION
-
-The Smart Traffic Light Simulation System successfully achieved its purpose of simulating traffic light operations and pedestrian crossing management. The project demonstrates the practical application of VB.NET Windows Forms, timers, graphical user interface controls, and event-driven programming concepts in the development of a traffic management simulation system.
+This project also serves as a learning tool for understanding the basic principles of traffic light synchronization, pedestrian crossing management, and automated control systems using VB.NET Windows Forms.
